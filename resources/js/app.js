@@ -1,10 +1,10 @@
 import "./bootstrap";
 
-import { createApp } from "vue";
+import { createApp } from "vue/dist/vue.esm-bundler";
 import cycleComponent from "./Vue/Components/cycle.vue";
 import Router from "./Vue/router.js";
-const app = Vue.createApp({
-    components: {},
+const app = createApp({
+    components: {cycleComponent},
 })
-    .use(router)
+    .use(Router)
     .mount("#app");
