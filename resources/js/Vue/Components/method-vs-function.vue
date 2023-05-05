@@ -1,5 +1,8 @@
 <template>
     <div>
+    <ul>
+    <li>if a value is being updated in function and a computed also have that variable tu woh computed b call hoga bad main(note: agar computed template main use ho rha tbhi chaly ga else nhe ) </li>
+    </ul>
         <h1>Methods</h1>
         <small> first time render main dono khud e call hoty and agr a++ ya b++ direct kr rhy tu pora render hota else wohi part jo change ho raha..  and if we are using direct printing of a function then rerender main woh sara chalta h. else on normal click mian sirf wohi wala hoga </small>
         <button v-on:click="a++">Add to A</button>
@@ -15,6 +18,7 @@
 
         <h1>Computed Properties</h1>
         <small> for first render both computed runs automatically, us k bad jiski value change hoti h sirf wohi call hota h </small>
+                <strong>The computed only runs if the data property is changed(i.e. new value!= old value)</strong>
                 <p>Age + A = {{ addToAcomputed }}</p>
                 <p>Age + B = {{ addToBcomputed }}</p>
     </div>
@@ -35,6 +39,7 @@ export default {
         },
         addToBmethod: function () {
             console.log("addToB method");
+            this.b=this.b+1;
             return this.b + this.age;
         },
     },
