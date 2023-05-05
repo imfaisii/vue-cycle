@@ -14,6 +14,7 @@
 
         <p>Age + A = {{ addToAmethod() }}</p>
         <p>Age + B = {{ addToBmethod() }}</p>
+        <small> calling a function like direct addToBmethod() in vue template can make it recall it  </small>
 
 
         <h1>Computed Properties</h1>
