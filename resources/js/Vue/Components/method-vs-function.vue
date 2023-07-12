@@ -40,7 +40,7 @@ export default {
         },
         addToBmethod: function () {
             console.log("addToB method");
-            this.b=this.b+1;
+            // this.b=this.b+1;
             return this.b + this.age;
         },
     },
