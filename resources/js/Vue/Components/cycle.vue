@@ -3,7 +3,7 @@
         <div class="col-lg-12">
             <h1>Vue life cycle hooks</h1>
             <small>
-            Whenever a data is changed or the any part of the dom is updated, the whole dom is rerendered
+            Whenever a data is changed or the any part of the dom is updated, the part where data or variable is used is updated
             </small>
             <p>{{ name }}</p>
             <p>{{ count }}</p>
